@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Emoji_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/Gray">
+
+        <ImageView
+            android:id="@+id/backsticker"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="50dp"
+            android:gravity="center"
+            android:text="Sticker"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <GridView
+            android:id="@+id/gridview1"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/GrayLight2"
+            android:gravity="center"
+            android:numColumns="3"></GridView>
+
+        <GridView
+            android:id="@+id/gridview2"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/GrayLight2"
+            android:gravity="center"
+            android:numColumns="3"></GridView>
+        <GridView
+            android:id="@+id/gridview3"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/GrayLight2"
+            android:gravity="center"
+            android:numColumns="3"></GridView>
+        <GridView
+            android:id="@+id/gridview4"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/GrayLight2"
+            android:gravity="center"
+            android:numColumns="3"></GridView>
+        <GridView
+            android:visibility="gone"
+            android:id="@+id/gridview5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/GrayLight2"
+            android:gravity="center"
+            android:numColumns="3"></GridView>
+        <GridView
+            android:id="@+id/gridview6"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/GrayLight2"
+            android:gravity="center"
+            android:numColumns="3"></GridView>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/Gray">
+
+        <ImageView
+            android:id="@+id/emoji"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:src="@mipmap/smiley" />
+
+        <ImageView
+            android:id="@+id/monster"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/monster_01" />
+
+        <ImageView
+            android:id="@+id/anniversary"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/l24" />
+
+        <ImageView
+            android:id="@+id/wedding"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/wedding06" />
+
+        <ImageView
+            android:id="@+id/love"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/s14" />
+
+        <ImageView
+            android:id="@+id/party"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/b1" />
+    </LinearLayout>
+</LinearLayout>
